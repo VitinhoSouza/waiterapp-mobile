@@ -13,7 +13,7 @@ export default [
       ...pluginReact.configs.flat.recommended.rules,
       "react/react-in-jsx-scope": "off", // Desabilita a regra
       indent: ["error", 2],
-      "linebreak-style": ["error", "unix"],
+      "linebreak-style": ["error", "off"],
       quotes: ["error", "double"],
       semi: ["error", "always"],
     },
