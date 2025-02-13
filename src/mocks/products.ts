@@ -1,39 +1,22 @@
 export const products = [
   {
-    _id: '6372e040f52e37ef85fe2c5e',
-    name: 'Pizza quatro queijos',
-    description: 'Deliciosa pizza quatro queijos com borda simples',
-    imagePath: '1668472896991-quatro-queijos.png',
-    price: 40,
-    ingredients: [
-      {
-        name: 'Mussarela',
-        icon: '🧀',
-        _id: '6372e040f52e37ef85fe2c5f'
-      },
-      {
-        name: 'Parmesão',
-        icon: '🧀',
-        _id: '6372e040f52e37ef85fe2c60'
-      },
-      {
-        name: 'Gouda',
-        icon: '🧀',
-        _id: '6372e040f52e37ef85fe2c61'
-      },
-      {
-        name: 'Brie',
-        icon: '🧀',
-        _id: '6372e040f52e37ef85fe2c62'
-      }
-    ],
-  },
-  {
-    _id: '6372e276a381106c0f854cb3',
-    name: 'Coca cola',
-    description: 'Coca cola lata geladinha topzera',
-    imagePath: '1668473462705-coca-cola.png',
+    _id: "679e71dcbd0107804aad9d49",
+    name: "Coca cola",
+    description: "Coca cola lata geladinha",
+    imagePath: "1738437084939-coca-cola.png",
     price: 7,
     ingredients: [],
+    category: "679e7124bd0107804aad9d44",
+    __v: 0,
+  },
+  {
+    _id: "679e7228bd0107804aad9d4b",
+    name: "Pizza quatro queijos",
+    description: "Deliciosa Pizza quatro queijos",
+    imagePath: "1738437160711-quatro-queijos.png",
+    price: 40,
+    ingredients: [],
+    category: "679e713bbd0107804aad9d46",
+    __v: 0,
   },
 ];
