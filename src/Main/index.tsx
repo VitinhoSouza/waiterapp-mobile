@@ -19,10 +19,18 @@ export function Main() {
   function handleSaveTable(table: string) {
     setSelectedTable(table);
   }
+
+  function handleCancelOrder() {
+    setSelectedTable("");
+  }
+
   return (
     <>
       <Container>
-        <Header />
+        <Header
+          selectedTable={selectedTable}
+          onCancelOrder={handleCancelOrder}
+        />
 
         <CategoriesContainer>
           <Categories />
