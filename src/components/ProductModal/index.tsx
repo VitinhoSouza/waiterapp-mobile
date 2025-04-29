@@ -14,6 +14,7 @@ import {
 } from "./styles";
 import { Close } from "../Icons/Close";
 import { Button } from "../Button";
+import { machineIpAddress } from "../../utils/api";
 
 interface ProductModalProps {
   visible: boolean;
@@ -44,7 +45,7 @@ export function ProductModal({
     >
       <Image
         source={{
-          uri: `http://192.168.1.108:3001/uploads/${product.imagePath}`,
+          uri: `${machineIpAddress}:3001/uploads/${product.imagePath}`,
         }}
       >
         <CloseButton onPress={onClose}>

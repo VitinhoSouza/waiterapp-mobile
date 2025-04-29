@@ -1,5 +1,7 @@
 import axios from "axios";
 
+export const machineIpAddress = "http://192.168.1.101";
+
 export const api = axios.create({
-  baseURL: "http://192.168.1.109:3001",
+  baseURL: `${machineIpAddress}:3001`,
 });

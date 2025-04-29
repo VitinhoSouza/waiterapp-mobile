@@ -12,6 +12,7 @@ import { PlusCircle } from "../Icons/PlusCircle";
 import { ProductModal } from "../ProductModal";
 import { useState } from "react";
 import { Product } from "../../types/product";
+import { machineIpAddress } from "../../utils/api";
 
 interface MenuProps {
   onAddToCart: (product: Product) => void;
@@ -41,7 +42,7 @@ export function Menu({ onAddToCart, products }: MenuProps) {
           >
             <ProductImage
               source={{
-                uri: `http://192.168.1.108:3001/uploads/${product.imagePath}`,
+                uri: `${machineIpAddress}:3001/uploads/${product.imagePath}`,
               }}
             />
             <ProductDetails>

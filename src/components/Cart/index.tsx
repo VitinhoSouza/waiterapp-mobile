@@ -17,7 +17,7 @@ import { Button } from "../Button";
 import { Product } from "../../types/product";
 import { OrderConfirmedModal } from "../OrderConfirmedModal";
 import { useState } from "react";
-import { api } from "../../utils/api";
+import { api, machineIpAddress } from "../../utils/api";
 
 interface CartProps {
   cartItems: CartItem[];
@@ -76,7 +76,7 @@ export function Cart({
               <ProductContainer>
                 <Image
                   source={{
-                    uri: `http://192.168.1.108:3001/uploads/${cartItem.product.imagePath}`,
+                    uri: `${machineIpAddress}:3001/uploads/${cartItem.product.imagePath}`,
                   }}
                 />
 
